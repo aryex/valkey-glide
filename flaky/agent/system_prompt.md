@@ -258,7 +258,12 @@ flaky/
 
 ### Phase 6: Publish
 
-12. **Commit, push, and open a draft PR:**
+12. **Lint, commit, push, and open a draft PR:**
+    - Run the linter to auto-fix formatting before committing:
+      ```bash
+      cd /home/ec2-user/valkey-glide/python
+      python3 dev.py lint
+      ```
     - Stage only the files you changed (no unrelated files):
       ```bash
       git add <changed files>
